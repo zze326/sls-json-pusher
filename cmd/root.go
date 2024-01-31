@@ -102,5 +102,4 @@ func init() {
 	rootCmd.MarkPersistentFlagRequired("endpoint")
 	rootCmd.MarkFlagRequired("project")
 	rootCmd.MarkFlagRequired("log-store")
-	rootCmd.MarkFlagRequired("data")
 }
