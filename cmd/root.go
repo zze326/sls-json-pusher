@@ -74,7 +74,7 @@ var (
 				Topic: proto.String(topic),
 				Logs:  logs,
 			}); err != nil {
-				(fmt.Println("推送出错：", err))
+				fmt.Println("推送出错：", err)
 				os.Exit(1)
 			}
 			fmt.Println("推送成功")
