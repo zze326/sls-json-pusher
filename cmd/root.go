@@ -53,7 +53,7 @@ var (
 					for k, v := range m {
 						content = append(content, &sls.LogContent{
 							Key:   proto.String(k),
-							Value: proto.String(fmt.Sprintf("%v", v.Value())),
+							Value: proto.String(v.String()),
 						})
 					}
 					return &sls.Log{
